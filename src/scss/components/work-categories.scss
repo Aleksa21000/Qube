@@ -1,0 +1,43 @@
+.work-categories {
+    color: $white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    @include mq(1150) {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+.whs_tags {
+    text-transform: initial;
+    width: 100%;
+    max-width: 715px;
+    margin: 100px 0 200px;
+
+    @include mq(1300) {
+        max-width: 550px;
+    }
+
+    @include mq(800) {
+        margin: 100px 0;
+    }
+}
+
+.whs_tags-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.tags-list_text {
+    width: 130px;
+    text-align: left;
+}

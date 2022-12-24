@@ -1,0 +1,69 @@
+.work-home-section {
+    width: 100%;
+    height: 100%;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include mq(1150) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.whs_image {
+    height: 85vh;
+    width: 50%;
+    object-fit: cover;
+
+    @include mq(1680) {
+        width: 40%;
+        height: 65vh;
+    }
+
+    @include mq(1150) {
+        width: 100%;
+    }
+
+    @include mq(800) {
+        height: 45vh;
+    }
+}
+
+.whs_content {
+    color: $white;
+    text-transform: uppercase;
+    margin-left: 150px;
+    padding-right: 80px;
+
+    @include mq(1440) {
+        padding-right: 40px;
+        margin-left: 80px;
+    }
+
+    @include mq(1150) {
+        margin-left: 0;
+        padding: 0 40px;
+        margin-top: 50px;
+    }
+
+    @include mq(650) {
+        padding: 0 20px;
+    }
+}
+
+.whs_title {
+    @include mq(1300) {
+        font-size: 55px;
+    }
+
+    @include mq(470) {
+        font-size: 40px;
+    }
+}
+
+.whs_logo-wrapper {
+    color: transparent;
+    -webkit-text-stroke: 1px $white;
+}

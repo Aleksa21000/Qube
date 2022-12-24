@@ -1,0 +1,10 @@
+@import 'mixins';
+@import 'fonts';
+@import 'variables';
+@import 'global';
+
+@import './components/header';
+@import './components/home-banner';
+@import './components/work-home-section';
+@import './components/work-categories';
+@import './components/work-about';

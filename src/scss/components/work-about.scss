@@ -1,0 +1,109 @@
+.work-about {
+    background: $white;
+    color: $black;
+    overflow: hidden;
+}
+
+.work-about_inner {
+    padding: 200px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    @include mq(900) {
+        flex-direction: column;
+    }
+
+    @include mq(800) {
+        padding: 100px 0;
+    }
+}
+
+.work-about_img {
+    position: relative;
+    left: 50px;
+    width: 600px;
+    height: 700px;
+    object-fit: cover;
+
+    @include mq(900) {
+        width: 100%;
+        height: 440px;
+    }
+}
+
+.work-about_content {
+    width: 100%;
+    max-width: 350px;
+    line-height: 1.5;
+    margin-left: 300px;
+
+    @include mq(1350) {
+        margin-left: 100px;
+    }
+
+    @include mq(960) {
+        margin-left: 50px;
+    }
+
+    @include mq(900) {
+        margin-left: 0;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+}
+
+.work-about_line {
+    width: 100%;
+    height: 1px;
+    background: $black;
+    margin-bottom: 30px;
+}
+
+.work-about_text {
+    margin-bottom: 30px;
+
+    &:nth-child(3){
+        margin-bottom: 45px;
+    }
+}
+
+.work-about_link {
+    display: block;
+    position: relative;
+    color: $black;
+    margin-top: 30px;
+    max-width: 95px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $black;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $black;
+        transition: 0.15s bottom cubic-bezier(.3,.9,.66,.98);
+        will-change: bottom;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    @include hover {
+        &::after {
+            bottom: calc(100% + 4px);
+        } 
+    }
+}

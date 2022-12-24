@@ -1,0 +1,196 @@
+.home-banner {
+    width: 100%;
+    height: 100vh;
+    background: $black;
+}
+
+.hb_swiper {
+    width: 100%;
+    height: 100%;
+
+    .hb_swiper-bottom {
+        position: absolute;
+        bottom: 3%;
+        left: calc(50% - 200px);
+        width: 400px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mq(600) {
+            width: 300px;
+            left: calc(50% - 150px);
+        }
+    }
+
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        z-index: -1;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        display: inline-block;
+        margin: 0 7px;
+        width: 30px;
+        height: 2px;
+        background: $white;
+        transition: 0.5s transform, 0.5s margin;
+        will-change: transform, margin;
+        border-radius: 0;
+        transform-origin: 50% 50%;
+    }
+
+    .swiper-pagination-bullet-active {
+        transform: scaleX(1.5);
+        margin: 0 15px !important;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        &::after {
+            display: none;
+        }
+
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+.hb_slide {
+    position: relative;
+    z-index: 3;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 85%;
+        background: $black-40;
+
+        @include mq(900) {
+            width: 100%;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        height: 85%;
+        width: 80%;
+        object-fit: cover;
+
+        @include mq(900) {
+            width: 100%;
+        }
+    }
+
+    .hb_swiper-content {
+        position: absolute;
+        z-index: 2;
+        top: calc(50% - 100px);
+        left: 140px;
+        user-select: none;
+
+        @include mq(900) {
+            left: 70px;
+            top: calc(50% - 130px);
+        }
+
+        @include mq(560) {
+            left: 20px;
+        }
+    }
+
+    .hb_swiper-title {
+        color: $white;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        text-transform: uppercase;
+
+        @include mq(470) {
+            font-size: 40px;
+        }
+    }
+
+    .hb_swiper-logo-wrapper,
+    .hb_swiper-first-part-wrapper,
+    .hb_swiper-second-part-wrapper {
+        overflow: hidden;
+    }
+
+    .hb_swiper-first-part-wrapper {
+        margin: 15px 0 10px 0;
+    }
+
+    .hb_swiper-logo {
+        display: inline-block;
+        color: transparent;
+        -webkit-text-stroke: 1px $white;
+    }
+
+    .hb_swiper-first-part,
+    .hb_swiper-second-part {
+        display: inline-block;
+    }
+
+    .hb_swiper-btn-wrapper {
+        position: absolute;
+        z-index: 2;
+        bottom: 3.5%;
+        right: 40px;
+
+        @include mq(730) {
+            left: 70px;
+            bottom: 30%;
+        }
+
+        @include mq(560) {
+            left: 20px;
+        }
+    }
+
+    .hb_swiper-btn {
+        display: inline-block;
+        position: relative;
+        color: $white;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $white;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $white;
+            transition: 0.15s bottom cubic-bezier(.3,.9,.66,.98);
+            will-change: bottom;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        @include hover {
+            &::after {
+                bottom: calc(100% + 4px);
+            } 
+        }
+    }
+}

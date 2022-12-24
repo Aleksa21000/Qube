@@ -1,0 +1,51 @@
+// Core style      
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+a{
+    text-decoration: none;
+}
+  
+li{
+    list-style: none;
+}
+
+body {
+    background: $black;
+}
+
+// Containers
+.container {
+    padding: 0 80px;
+
+    @include mq(1440) {
+        padding: 0 40px;
+    }
+
+    @include mq(650) {
+        padding: 0 20px;
+    }
+}
+
+.transition-container {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    background: $white;
+
+    &.black {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: $black;
+    }
+}

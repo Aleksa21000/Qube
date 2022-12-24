@@ -1,0 +1,153 @@
+// GUILLON
+@font-face {
+    font-family: "Guillon Demi";
+    src: url("../../public/fonts/Guillon-Demi.woff2") format("woff2"),
+        url("../../public/fonts/Guillon-Demi.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Guillon";
+    src: url("../../public/fonts/Guillon-Bold.woff2") format("woff2"),
+        url("../../public/fonts/Guillon-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Guillon";
+    src: url("../../public/fonts/Guillon-Black.woff2") format("woff2"),
+        url("../../public/fonts/Guillon-Black.woff") format("woff");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+// ROBOTO
+@font-face {
+    font-family: "Roboto";
+    src: url("../../public/fonts/Roboto-Medium.woff2") format("woff2"),
+        url("../../public/fonts/Roboto-Medium.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../public/fonts/Roboto-Black.woff2") format("woff2"),
+        url("../../public/fonts/Roboto-Black.woff") format("woff");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../public/fonts/Roboto-Light.woff2") format("woff2"),
+        url("../../public/fonts/Roboto-Light.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../public/fonts/Roboto-Bold.woff2") format("woff2"),
+        url("../../public/fonts/Roboto-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../public/fonts/Roboto-Regular.woff2") format("woff2"),
+        url("../../public/fonts/Roboto-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../public/fonts/Roboto-Thin.woff2") format("woff2"),
+        url("../../public/fonts/Roboto-Thin.woff") format("woff");
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+}
+
+// Guillon
+.guillon-170-900 {
+    font-family: "Guillon";
+    font-size: 170px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 3px;
+}
+
+.guillon-90-900 {
+    font-family: "Guillon";
+    font-size: 90px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 3px;
+
+    @include mq(650) {
+        font-size: 65px;
+    }
+
+    @include mq(400) {
+        font-size: 45px;
+    }
+}
+
+.guillon-80-900 {
+    font-family: "Guillon";
+    font-size: 80px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 100%;
+
+    @include mq(900) {
+        font-size: 65px;
+    }
+
+    @include mq(560) {
+        font-size: 55px;
+    }
+}
+
+.guillon-28-700 {
+    font-family: "Guillon";
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: -1px;
+}
+
+
+.guillon-22-500 {
+    font-family: "Guillon Demi";
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: -1px;
+}
+
+// Roboto
+.roboto-16-300 {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 100%;
+}

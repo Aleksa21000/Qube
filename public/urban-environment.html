@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preload" as="font" href="../public/fonts/Guillon-Black.woff2" type="font/woff2" crossorigin="crossorigin">
+        <link rel="stylesheet" href="../src/scss/app.scss">
+        <title>Qube</title>
+    </head>
+    <body data-barba="wrapper">
+        <div class="transition-container"></div>
+        <div class="transition-container black"></div>
+        <main data-barba="container">
+            <header class="header | js-header">
+                <div class="container mh--inner | js-">
+                    <a href="index.html" class="mh_logo guillon-28-700">QUBE</a>
+                    <div class="mh_btn-box">
+                        <div class="mh_btn-open guillon-22-500 | js-btn-open">MENU</div>
+                        <div class="mh_btn-close guillon-22-500 | js-btn-close">CLOSE</div>
+                    </div>
+                </div>
+                <nav class="mh_main-nav">
+                    <div class="mh_social-icons">
+                        <a href="#" class="mh_social-icon">
+                            <img src="./uploads/svg/instagram.svg" alt="Instagram icon">
+                        </a>
+                        <a href="#" class="mh_social-icon">
+                            <img src="./uploads/svg/facebook.svg" alt="Facebook icon">
+                        </a>
+                        <a href="#" class="mh_social-icon">
+                            <img src="./uploads/svg/linkedin.svg" alt="Linkedin icon">
+                        </a>
+                    </div>
+                    <ul class="mh_menu-items">
+                        <li class="mh_menu-item">
+                            <img src="./uploads/svg/cube-1.svg" alt="Hover Cube 1">
+                            <a href="#" class="mh_menu-item-link guillon-90-900">Work</a>
+                        </li>
+                        <li class="mh_menu-item">
+                            <a href="#" class="mh_menu-item-link guillon-90-900">About</a>
+                            <img src="./uploads/svg/cube-2.svg" alt="Hover Cube 2">
+                        </li>
+                        <li class="mh_menu-item">
+                            <img src="./uploads/svg/cube-3.svg" alt="Hover Cube 3">
+                            <a href="#" class="mh_menu-item-link guillon-90-900">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="work-home-section">
+                <img src="./uploads/urban-environment.jpg" alt="Urban Environment" class="whs_image | js-slide-to-left">
+                <div class="whs_content">
+                    <h1 class="whs_title guillon-80-900">
+                        <div class="whs_logo-wrapper">Qube</div>
+                        <div class="whs_first-part-wrapper">Urban</div>
+                        <div class="whs_second-part-wrapper">Environment</div>
+                    </h1>
+                </div>
+            </section>
+
+            <section class="work-categories container">
+                <div class="whs_tags roboto-16-300">
+                    <div class="whs_tags-list">
+                        <div class="tags-list_title">Category</div>
+                        <div class="tags-list_text">Philosophy</div>
+                    </div>
+                    <div class="whs_tags-list">
+                        <div class="tags-list_title">Client</div>
+                        <div class="tags-list_text">QUBE</div>
+                    </div>
+                    <div class="whs_tags-list">
+                        <div class="tags-list_title">Location</div>
+                        <div class="tags-list_text">Pennsylvania</div>
+                    </div>
+                    <div class="whs_tags-list">
+                        <div class="tags-list_title">Year</div>
+                        <div class="tags-list_text">2021</div>
+                    </div>
+                </div>
+            </section>
+
+            <script type="module" src="../src/app.js"></script>
+        </main>
+    </body>
+</html>
